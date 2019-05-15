@@ -11,6 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/about', function () {
+//     return view('about');
+// });
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
+
+// Route::get('/hello', function () {
+//     return view('hello');
+// });
+Route::get('/','HelloController@index');
+Route::get('/contact','HelloController@contact');
+Route::get('/about','HelloController@about');
+Route::get('/db_test','HelloController@db_test');
